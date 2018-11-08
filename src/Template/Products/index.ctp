@@ -5,6 +5,7 @@
         <th>Id</th>
         <th>Title</th>
         <th>Created</th>
+        <th>Actions</th>
     </tr>
     <?php foreach ($products as $product): ?>
         <tr>

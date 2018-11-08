@@ -8,3 +8,6 @@
         ['confirm' => 'Are You sure?'])
     ?>
 </p>
+<p>
+    <?= $this->Html->link('Back', ['action' => 'index']) ?>
+</p>

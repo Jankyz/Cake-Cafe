@@ -7,3 +7,6 @@ echo $this->Form->control('p_desc', ['rows' => '4']);
 echo $this->Form->button(__('Save Product'));
 echo $this->Form->end();
 ?>
+<p>
+    <?= $this->Html->link('Back', ['action' => 'index']) ?>
+</p>
