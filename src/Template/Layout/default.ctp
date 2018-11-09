@@ -42,13 +42,12 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         </ul>
         <div class="top-bar-section">
             <ul class="right">
-                <li><?= $this->Html->link(__('Register'), ['controller' => 'users', 'action' => 'add']) ?></li>
-                <li>
-                    <?= $this->Html->link(__('Logout'), ['controller' => 'users', 'action' => 'logout']) ?>
-                </li>
-                <li>
-                    <?= $this->Html->link(__('Login'), ['controller' => 'users', 'action' => 'login']) ?>
-                </li>
+                <?php if ($this->request->getSession()->read('Auth.User')) { ?>
+                <li> <?= $this->Html->link(__('Logout'), ['controller' => 'users', 'action' => 'logout']) ?> </li>
+                <?php } else { ?>
+                <li> <?= $this->Html->link(__('Register'), ['controller' => 'users', 'action' => 'add']) ?> </li>
+                <li> <?= $this->Html->link(__('Login'), ['controller' => 'users', 'action' => 'login']) ?> </li>
+                <?php }?>
             </ul>
         </div>
     </nav>
