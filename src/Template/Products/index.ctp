@@ -2,9 +2,9 @@
 <?= $this->Html->link('Add Product', ['action' => 'add']); ?>
 <table>
     <tr>
-        <th>Id</th>
-        <th>Title</th>
-        <th>Created</th>
+        <th><?= $this->Paginator->sort('id', 'Id') ?></th>
+        <th><?= $this->Paginator->sort('title', 'Title') ?></th>
+        <th><?= $this->Paginator->sort('created', 'Created') ?></th>
         <th>Actions</th>
     </tr>
     <?php foreach ($products as $product): ?>
