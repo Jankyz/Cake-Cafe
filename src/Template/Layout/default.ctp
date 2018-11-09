@@ -13,7 +13,7 @@
  * @license       https://opensource.org/licenses/mit-license.php MIT License
  */
 
-$cakeDescription = 'CakePHP: the rapid development php framework';
+$cakeDescription = 'Cake&Cafe';
 ?>
 <!DOCTYPE html>
 <html>
@@ -56,6 +56,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         <?= $this->fetch('content') ?>
     </div>
     <footer>
+        <p class="text-center">Cake&Cafe &copy; 2018</p>
     </footer>
 </body>
 </html>
